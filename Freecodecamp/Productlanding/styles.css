@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+#header {
+    background-color: white;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#header-img {
+    width: 100px;
+    max-width: 100%;
+
+}
+
+#product {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); 
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 25px;
+    border-bottom: 3px solid black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    margin: 10px 40px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+    padding-top: 80px; /* Adjust based on header height */
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    text-align: center;
+    padding-right: 130px;
+    padding-left: 130px;
+}
+
+/* Video Styles */
+#video {
+    width: 100%;
+    max-width: 600px;
+    height: 340px;
+}
+
+/* Form Styles */
+#form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+#email {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#submit {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Media Queries */
+@media (max-width: 720px) {
+    #nav-bar {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        margin: 5px 0;
+    }
+
+    #video {
+        height: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    #header-img {
+        width: 80px; /* Resize logo */
+    }
+
+    #video {
+        height: 180px; /* Further reduce video height */
+    }
+
+    #form {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    #header {
+        padding: 5px;
+    }
+
+    .nav-link {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 420px) {
+    #header {
+        text-align: left;
+        padding: 5px;
+    }
+
+    .nav-link {
+        font-size: 12px; 
+    }
+
+    #video {
+        height: 150px; 
+    }
+}

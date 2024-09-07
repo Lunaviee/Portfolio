@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #201E43;
+}
+
+#title {
+    text-align: center;
+    margin-top: 20px;
+    color: #E1D7B7;
+    font-style: italic;
+    font-size: 50px;
+}
+
+#description {
+    text-align: center;
+    margin: 10px 0 20px;
+    color: #E1D7B7;
+    font-size: medium;
+    font-style:italic;
+}
+
+form {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #1E2A5E;
+    padding-top: 18px;
+    
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+legend {
+    font-style: oblique;
+    font-weight: bold;
+    font-size: medium;
+    color: #55679C;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#comments {
+    font-style: oblique;
+    font-size: 15px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1E2A5E;
+}

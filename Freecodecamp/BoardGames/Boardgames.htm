@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--
+    Tutorial 8, Tutorial
+    Your Name: Gonzales, Samantha Wayne 
+    Today's Date: August 22, 2024
+-->
+
+<script src="modernizr-2.js"></script>
+<title>BoardGames</title>
+<style type="text/css">
+
+body {
+    width: 910px;
+    margin-top: 0;
+    margin-bottom:0;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: black;
+    font-family: Verdana, sans-serif;
+    height: 1.5em;
+}
+
+h1, .h1 {
+    color: #E5E0D9;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: bold;
+    background-color: #964d22;
+    padding:10px;
+    border: solid 3px #FFDBB5;
+}
+
+
+h3{
+    color: white;
+    font-size: 1em;
+    font-style: oblique;
+}
+
+.P1 {
+    color: goldenrod;
+}
+.P2 {
+    color: #964d22;
+}
+
+table, th, td {
+    border: solid 2px #964d37;
+    border-collapse: collapse;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    padding: 4px;
+    vertical-align: top;
+}
+
+td, #chess {
+    font-size: 40px;
+    text-align: center;
+}
+
+table {
+    width: 70%;
+    height: 30em;
+    margin: 30px auto;
+    border: solid 3px #964d22;
+}
+/*Table2*/
+
+.h1 {
+    color: #E5E0D9;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: bold;
+    background-color: #964d22;
+    padding:10px;
+    border: solid 3px #FFDBB5;
+}
+.Table2 td {
+    text-align: center;
+    font-size: 35px;
+}
+
+td.stripe {
+    background-color: black;
+    color: white;
+}
+
+.Table2 {
+    width: 80%;
+    height: 30em;
+    margin: 30px auto;
+    border: solid 4px #964d22;
+}
+
+.Table2, th, td {
+    border: solid 3px #964d37;
+    color: goldenrod;
+}
+
+
+.P1T2{
+    color: goldenrod;
+}
+.P2T2 {
+    color:#964d22;
+
+}
+
+/*Table 3 */
+.T3H {
+    color: #E5E0D9;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: bold;
+    background-color: #964d22;
+    padding:10px;
+    border: solid 3px #FFDBB5;
+    
+}
+
+.table3 {
+    width: 100%;
+    height: 40em;
+    margin: 30px auto;
+    border: solid 3px #964d22;
+}
+
+#pattern {
+    background-color: #964d37;
+    font-size: 18px;
+    font-style:italic;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#pattern3 {
+    background-color: #FFAD60;
+    color: #964d22;
+    text-align: center;
+    font-size: 18px;
+    font-style:italic;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#center {
+    background-color: #FFDE4D;
+    text-align: center;
+}
+#triple {
+    background-color: #FFDBB5;
+    color: #964d22;
+    text-align: center;
+    font-size: 18px;
+    font-style:italic;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#pattern4 {
+    background-color: #CA965C;
+    color:#4C3D3D;
+    text-align: center;
+    font-size: 18px;
+    font-style:italic;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#diff {
+    background-color: #FFD93D;
+    color:#964d37;
+    text-align: center;
+    font-size: 18px;
+    font-style:italic;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.P1T3 {
+    color: goldenrod;
+}
+.P2T3 {
+    color: #964d22;
+
+}
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    padding: 50px;
+    font-size: 18px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <p><img src="./img/Banner.jpg" alt="Chess Pawns" width="900" height="250" /></p>
+</header> 
+
+<h1>♕ Royal Chess ♕<br /></h1>
+
+<h3 class="P1">Player 1: </h3>
+<h3 class="P2">Player 2: </h3>
+
+<!-- Chess Board -->
+<table>
+    <tr>
+        <td>♜</td>
+        <td class="stripe" id="chess">♞</td>
+        <td id="chess">♝</td>
+        <td class="stripe" id="chess">♛</td>
+        <td id="chess">♚</td>
+        <td class="stripe" id="chess">♝</td>
+        <td id="chess">♞</td>
+        <td class="stripe" id="chess">♜</td>
+    </tr>
+    <tr>
+        <td class="stripe" id="chess">♟</td>
+        <td id="chess">♟</td>
+        <td class="stripe" id="chess">♟</td>
+        <td id="chess">♟</td>
+        <td class="stripe" id="chess">♟</td>
+        <td id="chess">♟</td>
+        <td class="stripe" id="chess">♟</td>
+        <td id="chess">♟</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td class="stripe">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="stripe">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="stripe">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="stripe">&nbsp;</td>
+    </tr>
+    <tr>
+        <td class="stripe">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="stripe">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="stripe">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="stripe">&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td class="stripe">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="stripe">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="stripe">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="stripe">&nbsp;</td>
+    </tr>
+    <tr>
+        <td class="stripe">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="stripe">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="stripe">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class="stripe">&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td id="chess">♟</td>
+        <td class="stripe" id="chess">♟</td>
+        <td id="chess">♟</td>
+        <td class="stripe" id="chess">♟</td>
+        <td id="chess">♟</td>
+        <td class="stripe" id="chess">♟</td>
+        <td id="chess">♟</td>
+        <td class="stripe" id="chess">♟</td>
+    </tr>
+    <tr>
+        <td class="stripe" id="chess">♜</td>
+        <td id="chess" >♞</td>
+        <td class="stripe" id="chess">♝</td>
+        <td id="chess">♛</td>
+        <td class="stripe" id="chess">♚</td>
+        <td id="chess">♝</td>
+        <td class="stripe" id="chess">♞</td>
+        <td id="chess">♜</td>
+    </tr>
+</table>
+
+<!-- TIC TAC TOE -->
+<div id="T2"> 
+    
+    <h1 class="h1">TIC TAC TOE</h1>
+    <table class="Table2">
+    <h3 class="P1T2">Player 1: </h3>
+    <h3 class="P2T2">Player 2: </h3>
+
+        <tr>
+            <td>O</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td>X</td>
+            <td>O</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>O</td>
+            <td></td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td>O</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td>X</td>
+            <td>O</td>
+            <td>X</td>
+            <td></td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>X</td>
+            <td>O</td>
+            <td></td>
+            <td>O</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td></td>
+            <td>X</td>
+            <td>O</td>
+            <td>X</td>
+            <td></td>
+            <td>X</td>
+            <td></td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>O</td>
+            <td>X</td>
+            <td></td>
+            <td>X</td>
+            <td>O</td>
+            <td></td>
+            <td>O</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>O</td>
+            <td></td>
+            <td>O</td>
+            <td></td>
+            <td></td>
+            <td>X</td>
+            <td>O</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td>O</td>
+            <td>X</td>
+            <td></td>
+            <td>X</td>
+            <td>O</td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+
+<!-- Scabble -->
+<div id="T3">
+    <table class="table3">
+        <h1 class="T3H">Scrabble</h1>
+
+        <h3 class="P1T3">Player 1: </h3>
+        <h3 class="P2T3">Player 2: </h3>
+
+        <tr>
+            <th id="triple">Triple </br> Word </th>
+            <th></th>
+            <th></th>
+            <th id="pattern4">Double </br> Word</th> <!--Start Pattern 4-->
+            <th></th>
+            <th></th>
+            <th></th>
+            <td id="diff">Triple </br> Word</td>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th id="pattern4">Double </br> Word</th>
+            <th></th>
+            <th></th>
+            <td id="triple">Triple </br> Word</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td id="pattern">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="pattern4">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="pattern4">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="pattern">Double </br> Word</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td id="pattern">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="pattern4">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="pattern4">Double </br> Word;</td>
+            <td></td>
+            <td></td>
+            <td id="pattern">Double </br> Word</td>
+            <td></td>
+            <td></td>
+        </tr> <tr>
+            <td id="pattern3">Double </br> Word</td> <!--Pattern 3 start-->
+            <td></td>
+            <td></td>
+            <td id="pattern">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="triple">Triple </br> Word</td>
+            <td></td>
+            <td id="triple">Triple </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="pattern">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="pattern3">Double </br> Word</td>
+        </tr> <tr>
+            <td></td>
+            <td id="pattern3">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="pattern">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="pattern4"> Double </br> Word</td> <!--Center PATTERN4-->
+            <td></td>
+            <td></td>
+            <td id="pattern">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="pattern3">Double </br> Word</td>
+            <td></td>
+        </tr> <tr>
+            <td></td>
+            <td></td>
+            <td id="pattern3">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="triple">Triple </br> Word</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="triple">Triple </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="pattern3">Double </br> Word</td>
+            <td></td>
+            <td></td>
+        </tr> <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="triple">Triple </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="pattern">Double </br> Word</td>
+            <td></td>
+            <td id="pattern">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="triple">Triple </br> Word</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr> <tr>
+            <td id="diff">Triple </br> Word</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="pattern3">Double </br> Word</td> <!--Center Pat3-->
+            <td></td>
+            <td></td>
+            <td id="center">★</td> <!--center-->
+            <td></td>
+            <td></td>
+            <td id="pattern3">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="diff">Triple </br> Word</td>
+        </tr> <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="triple">Triple </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="pattern">Double </br> Word</td>
+            <td></td>
+            <td id="pattern">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="triple">Triple </br> Word</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr> <tr>
+            <td></td>
+            <td></td>
+            <td id="pattern3">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="triple">Triple </br> Word</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="triple">Triple </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="pattern3">Double </br> Word</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td id="pattern3">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="pattern">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="pattern4">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="pattern">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="pattern3">Double </br> Word</td>
+            <td></td>
+        </tr> <tr>
+            <td id="pattern3">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="pattern">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="triple">Triple </br> Word</td>
+            <td></td>
+            <td id="triple">Triple </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="pattern">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="pattern3">Double </br> Word</td>
+        </tr> <tr>
+            <td></td>
+            <td></td>
+            <td id="pattern">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="pattern4">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="pattern4">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="pattern">Double </br> Word</td>
+            <td></td>
+            <td></td>
+        </tr> <tr>
+            <td></td>
+            <td id="pattern">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="pattern4">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="pattern4">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="pattern">Double </br> Word</td>
+            <td></td>
+        </tr> 
+        <tr>
+            <td id="triple">Triple </br> Word</td>
+            <td></td>
+            <td></td>
+            <td id="pattern4">Double </br> Word</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="diff">Triple </br> Word</td>
+            <td></td> 
+            <td></td>
+            <td></td>
+            <td id="triple">Triple </br> Word</td> <!--END pattern 4-->
+            <td></td>
+            <td></td>
+            <td id="triple">Triple </br> Word</td>
+        </tr>
+
+    </table>
+</div>
+
+<footer>
+    Thank you for Playing!  &copy;Gonzales, Samantha Wayne WD-202
+</footer>
+
+</body>
+</html>
